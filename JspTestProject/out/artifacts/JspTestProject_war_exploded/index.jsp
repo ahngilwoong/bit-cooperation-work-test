@@ -11,12 +11,14 @@
 <style>
   table {
     width: 100%;
-    border: 1px solid #444444;
+    border: 1px solid #FFC0CB
+  ;
     border-collapse: collapse;
   }
   th, td {
-    background-color: aquamarine;
-    border: 1px solid #444444;
+    background-color: hotpink;
+    border: 1px solid #FFC0CB
+  ;
     padding: 10px;
   }
 </style>
