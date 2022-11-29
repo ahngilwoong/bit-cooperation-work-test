@@ -15,11 +15,11 @@ To change this template use File | Settings | File Templates.
     MongoClient mongo =  MongoClients.create();
     MongoDatabase database = mongo.getDatabase("db");
     MongoCollection<Document> collection = database.getCollection("board");
-    String name = (String) request.getParameter("name");
+    String name = (String) session.getAttribute("userName");
     String title = (String) request.getParameter("title");
     String content = (String) request.getParameter("content");
 
-    Document document = new Document("_id", null)
+    Document document = new Document()
             .append("name",name)
             .append("title",title)
             .append("content",content);

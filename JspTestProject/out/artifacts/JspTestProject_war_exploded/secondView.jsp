@@ -7,6 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>secondView</h1>
+	<h1>회원가입</h1>
+	
+	<form method="post" action="newUser.jsp">
+		<label>아이디</label>
+		<input type="text" name="id"><br/>
+		<label>비밀번호</label>
+		<input type="text" name="pw"><br/>
+		<label>이름</label>
+		<input type="text" name="name"><br/>
+		<input type="submit" value="가입">	
+	</form>
+	
 </body>
 </html>
