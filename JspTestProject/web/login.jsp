@@ -1,5 +1,11 @@
+<%@ page import="com.mongodb.MongoClient" %>
+<%@ page import="com.mongodb.DB" %>
+<%@ page import="com.mongodb.DBCollection" %>
+<%@ page import="com.mongodb.BasicDBObject" %>
+<%@ page import="com.mongodb.DBCursor" %>
+<%@ page import="org.bson.Document" %>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+		 pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,10 +26,10 @@
 	DBCollection table = db.getCollection("user");
 		
 	BasicDBObject query = new BasicDBObject("id", id);
-	DBCursor cursor = table.find(query);   
- 	
+	DBCursor cursor = table.find(query);
+
 	cursor.hasNext();
-	Document doc = cursor.next();
+	Document doc = (Document) cursor.next();
 	
 	if(pw.equals(doc.get("pw"))) {
 		System.out.println("로그인 성공");
