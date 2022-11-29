@@ -30,9 +30,9 @@
   <tr><th>A 기능</th><th>B 기능</th><th>C 기능</th>
 
   <tr>
-    <td> <a href="/firstView.jsp"><h2>A 기능 링크</h2></a></td>
-    <td> <a href="/secondView.jsp"><h2>B 링크 기능</h2></a></td>
-    <td><a href="/thirdView.jsp"><h2>C 기능 링크</h2></a></td>
+    <td> <a href="/first-view.jsp"><h2>A 기능 링크</h2></a></td>
+    <td> <a href="/second-view.jsp"><h2>B 링크 기능</h2></a></td>
+    <td><a href="/third-view.jsp"><h2>C 기능 링크</h2></a></td>
   </tr>
 
 </table>
