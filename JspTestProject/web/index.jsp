@@ -35,7 +35,6 @@
     <td><a href="/third-view.jsp"><h2>C 기능 링크</h2></a></td>
   </tr>
 
-  <a href="/insert.jsp"><h2>회원 추가</h2></a>
 </table>
 </body>
 </html>
