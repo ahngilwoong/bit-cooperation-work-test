@@ -19,7 +19,7 @@
 	String name = request.getParameter("name");
  
 	MongoClient client = new MongoClient("localhost", 27017);
-	MongoDatabase db = client.getDatabase("db");
+	MongoDatabase db = client.getDatabase("db01");
 	MongoCollection<Document> collection = db.getCollection("user");
 	
 	//insert
@@ -32,8 +32,6 @@
 	collection.insertOne(document);
 	
 	client.close();
-
-	response.sendRedirect("/index.jsp");
  %>
  
  <h1>회원 가입 완료</h1>
