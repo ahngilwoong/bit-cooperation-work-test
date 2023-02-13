@@ -8,16 +8,12 @@
 <%@ page import="com.mongodb.MongoClient" %>
 <%@ page import="java.rmi.UnknownHostException" %>
 <%@ page import="example.DAOClass" %>
-<%@ page import="java.util.Objects" %>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <%
     //  List<Member> list = (List<Member>) session.getAttribute("list");
 
-    if(Objects.isNull(session)){
-        response.sendRedirect("/firstView.jsp");
-    }
     MongoCursor<Document> cursor = DAOClass.loadDatabase();
 
 %>
